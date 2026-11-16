@@ -1,0 +1,657 @@
+<?xml version="1.0"?>
+
+
+<PropertyList>
+
+<path>weapons-panel.ac</path>
+
+<!-- left outbound -->
+    <animation>
+		<type>rotate</type>
+		<object-name>flip-4</object-name>
+		<property>controls/switches/weapons-pylon[0]</property>
+		<factor>34</factor>
+		<offset-deg>-10</offset-deg>
+		<center>
+			<x-m>-0.00007</x-m>
+			<y-m>0.00504</y-m>
+			<z-m>-0.01639</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+	    <type>pick</type>
+	    <type>select</type>
+	    <object-name>flip-4</object-name>
+	    <action>
+    		<button>0</button>
+    		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>weapons.set_pylon(0);</script>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/switches/weapons-pylon[0]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/armament/station[0]/armed</property>
+			</binding> 
+	    </action>
+    </animation>
+	
+	<!-- left inbound -->
+    <animation>
+		<type>rotate</type>
+		<object-name>flip-5</object-name>
+		<property>controls/switches/weapons-pylon[1]</property>
+		<factor>34</factor>
+		<offset-deg>-10</offset-deg>
+		<center>
+			<x-m>-0.00007</x-m>
+			<y-m>0.0191</y-m>
+			<z-m>-0.01639</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+	    <type>pick</type>
+	    <type>select</type>
+	    <object-name>flip-5</object-name>
+	    <action>
+    		<button>0</button>
+    		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>weapons.set_pylon(1);</script>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/switches/weapons-pylon[1]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/armament/station[1]/armed</property>
+			</binding> 
+	    </action>
+    </animation>
+	
+	<!-- center -->
+    <animation>
+		<type>rotate</type>
+		<object-name>flip-6</object-name>
+		<property>controls/switches/weapons-pylon[3]</property>
+		<factor>34</factor>
+		<offset-deg>-10</offset-deg>
+		<center>
+			<x-m>-0.00007</x-m>
+			<y-m>0.03292</y-m>
+			<z-m>-0.01639</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+	    <type>pick</type>
+	    <type>select</type>
+	    <object-name>flip-6</object-name>
+	    <action>
+    		<button>0</button>
+    		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>weapons.set_pylon(3);</script>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/switches/weapons-pylon[3]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/armament/station[3]/armed</property>
+		</binding> 
+	    </action>
+    </animation>
+	
+	<!-- right inbound -->
+    <animation>
+		<type>rotate</type>
+		<object-name>flip-7</object-name>
+		<property>controls/switches/weapons-pylon[5]</property>
+		<factor>34</factor>
+		<offset-deg>-10</offset-deg>
+		<center>
+			<x-m>-0.00007</x-m>
+			<y-m>0.04637</y-m>
+			<z-m>-0.01639</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+	    <type>pick</type>
+	    <type>select</type>
+	    <object-name>flip-7</object-name>
+	    <action>
+    		<button>0</button>
+    		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>weapons.set_pylon(5);</script>
+		</binding>
+                <binding>
+			<command>property-toggle</command>
+			<property>controls/switches/weapons-pylon[5]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/armament/station[5]/armed</property>
+		</binding> 
+	    </action>
+    </animation>
+	
+	<!-- right outbound -->
+    <animation>
+		<type>rotate</type>
+		<object-name>flip-8</object-name>
+		<property>controls/switches/weapons-pylon[6]</property>
+		<factor>34</factor>
+		<offset-deg>-10</offset-deg>
+		<center>
+			<x-m>-0.00007</x-m>
+			<y-m>0.06043</y-m>
+			<z-m>-0.01639</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+	    <type>pick</type>
+	    <type>select</type>
+	    <object-name>flip-8</object-name>
+	    <action>
+    		<button>0</button>
+    		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>weapons.set_pylon(6);</script>
+		</binding>
+                <binding>
+			<command>property-toggle</command>
+			<property>controls/switches/weapons-pylon[6]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/armament/station[6]/armed</property>
+		</binding>
+	    </action>
+    </animation>
+	
+	<!-- left cannon -->
+    <animation>
+		<type>rotate</type>
+		<object-name>flip-1</object-name>
+		<property>controls/switches/weapons-pylon[2]</property>
+		<factor>34</factor>
+		<offset-deg>-10</offset-deg>
+		<center>
+			<x-m>-0.00007</x-m>
+			<y-m>-0.06052</y-m>
+			<z-m>0.01087</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+	    <type>pick</type>
+	    <type>select</type>
+	    <object-name>flip-1</object-name>
+	    <action>
+    		<button>0</button>
+    		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>weapons.set_pylon(2);</script>
+		</binding>
+                <binding>
+			<command>property-toggle</command>
+			<property>controls/switches/weapons-pylon[2]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/armament/station[2]/armed</property>
+		</binding>
+	    </action>
+    </animation>
+	
+	<!-- right cannon -->
+    <animation>
+		<type>rotate</type>
+		<object-name>flip-2</object-name>
+		<property>controls/switches/weapons-pylon[4]</property>
+		<factor>34</factor>
+		<offset-deg>-10</offset-deg>
+		<center>
+			<x-m>-0.00007</x-m>
+			<y-m>-0.04525</y-m>
+			<z-m>0.01087</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+	    <type>pick</type>
+	    <type>select</type>
+	    <object-name>flip-2</object-name>
+	    <action>
+    		<button>0</button>
+    		<repeatable>false</repeatable>
+		<binding>
+			<command>nasal</command>
+			<script>weapons.set_pylon(4);</script>
+		</binding>
+                <binding>
+			<command>property-toggle</command>
+			<property>controls/switches/weapons-pylon[4]</property>
+		</binding>
+		<binding>
+			<command>property-toggle</command>
+			<property>controls/armament/station[4]/armed</property>
+		</binding> 
+		
+	    </action>
+    </animation>
+	
+	
+	
+	<!-- Knob Left -->
+	<animation>
+	    <type>pick</type>
+	    <type>select</type>
+	    <object-name>Knob-2</object-name>
+	    <action>
+    		<button>0</button>
+    		<repeatable>false</repeatable>
+		<binding>
+ 				<command>property-cycle</command>
+ 				<property>controls/armament/stick-selector</property>
+ 				<value type="int">0</value>
+ 				<value type="int">1</value>
+				<value type="int">2</value>
+			</binding>  
+	    </action>
+    </animation>
+	
+	<animation>
+	    <type>rotate</type>
+	    <object-name>Knob-2</object-name>
+	    <property>controls/armament/stick-selector</property>
+		<factor>-38</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>0.01351</x-m>
+			<y-m>-0.06031</y-m>
+			<z-m>-0.02839</z-m>
+		</center>
+		<axis>
+			<x>1.0</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+	    <type>rotate</type>
+	    <object-name>Knob-2</object-name>
+	    <property>engines/engine[0]/running</property>
+		<factor>-38</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>0.01351</x-m>
+			<y-m>-0.06031</y-m>
+			<z-m>-0.02839</z-m>
+		</center>
+		<axis>
+			<x>1.0</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<!-- left outbound Cylinder 
+	<animation>
+		<type>rotate</type>
+		<object-name>Cylinder-1</object-name>
+		<property>controls/armament/missile/name</property>
+			<value>1000lb bomb</value>
+		<factor>0</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>-0.00294</x-m>
+			<y-m>0.00702</y-m>
+			<z-m>0.00056</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<property>controls/armament/missile/name</property>
+			<value>1000lb bomb</value>
+		<factor>36</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>-0.00294</x-m>
+			<y-m>0.00702</y-m>
+			<z-m>0.00056</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>Cylinder-1</object-name>
+		<property>controls/armament/missile/name</property>
+			<value>1000lb bomb</value>
+		<factor>72</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>-0.00294</x-m>
+			<y-m>0.00702</y-m>
+			<z-m>0.00056</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>Cylinder-1</object-name>
+		<property>controls/armament/missile/name</property>
+			<value>1000lb bomb</value>
+		<factor>108</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>-0.00294</x-m>
+			<y-m>0.00702</y-m>
+			<z-m>0.00056</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>Cylinder-1</object-name>
+		<property>controls/armament/missile/name</property>
+			<value>1000lb bomb</value>
+		<factor>144</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>-0.00294</x-m>
+			<y-m>0.00702</y-m>
+			<z-m>0.00056</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	
+	<animation>
+		<type>rotate</type>
+		<object-name>Cylinder-1</object-name>
+		<property>controls/armament/missile/name</property>
+			<value>1000lb bomb</value>
+		<factor>180</factor>
+		<offset-deg>0</offset-deg>
+		<center>
+			<x-m>-0.00294</x-m>
+			<y-m>0.00702</y-m>
+			<z-m>0.00056</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>  -->
+	
+	<!-- Weapon Lights -->
+	<animation>
+	 <type>select</type>
+	 <object-name>safe-1</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>engines/engine[0]/running</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>safe-2</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>engines/engine[0]/running</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>safe-3</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>engines/engine[0]/running</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>safe-4</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>engines/engine[0]/running</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>safe-5</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>engines/engine[0]/running</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>armed-1</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[0]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>armed-2</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[1]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>armed-3</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[3]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>armed-4</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[5]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>armed-5</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[6]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>arm-1</object-name>	 
+	 <condition>
+		 <equals>
+             <property>controls/armament/station[0]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>arm-2</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[1]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>arm-3</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[3]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>arm-4</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[5]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>arm-5</object-name>	 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/station[6]/armed</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>fire-1</object-name>	
+	 <condition>
+		 <equals>
+			 <property>controls/armament/triggerl</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+	<animation>
+	 <type>select</type>
+	 <object-name>fire-2</object-name> 
+	 <condition>
+		 <equals>
+			 <property>controls/armament/triggerr</property>
+			 <value>1</value>
+		 </equals>
+	 </condition>
+    </animation>
+	
+</PropertyList>

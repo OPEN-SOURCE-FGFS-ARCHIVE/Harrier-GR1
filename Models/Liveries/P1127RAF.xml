@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+	<sim>
+		<model>
+			<livery>
+				<name type="string">RAF P1127RAF Evaluation</name>
+				<texture>Liveries/P1127RAF.png</texture>
+			</livery>
+			<livery-logo>
+				<texture>Liveries/P1127RAF.png</texture>
+			</livery-logo>
+		</model>
+	</sim>
+
+</PropertyList>
+
